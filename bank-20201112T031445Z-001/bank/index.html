@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <title>Vending Machine</title>
+</head>
+<body>
+    <h1>Vending Machine</h1>
+
+    <form >         <!-- Main Section  -->
+  
+        <span>Rands</span> <input type="text" name="rand" id="rand" placeholder="0" value="0" oninput="tally()">
+
+        <br />
+        <span>Cents</span> <input type="text" name="cent" id="cent" placeholder="0" value="0" oninput="tally()">
+        <br />
+      
+        
+       
+        
+    </form>
+   
+    <button value="Coke" id="coke" onclick="dispenseSoda(0)">Coke</button>
+    <button value="Simba" id="simba" onclick="dispenseSoda(1)">Simba</button>
+    <button value="Doritoes" id="doritoes" onclick="dispenseSoda(2)">Doritoes</button>
+    <button value="Sprite" id="sprite" style="margin-bottom: 10px;" onclick="dispenseSoda(3)">Sprite</button>
+    
+    
+
+    
+    <br/>
+    <button value="Cancel" id="cancel" onclick="cancel()">Cancel</button>
+    <button value="rands" id="rand" onclick="clear()">Clear "R"</button>
+
+    <h2>
+        Total Entered: R<span id="paid">0.00</span>
+    </h2>
+    <h2>Insert money first. Select a Product</h2>
+
+    <script src="vending.js"></script>
+</body>
+</html>
